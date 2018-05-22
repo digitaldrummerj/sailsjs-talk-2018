@@ -16,12 +16,12 @@ module.exports.policies = {
    *                                                                          *
   //  ***************************************************************************/
 
-  // UserController: {
-  //   'findOne': ['is-logged-in']
-  // },
-  // TodoController: {
-  //   'findOne': ['is-logged-in']
-  // },
+  UserController: {
+    findOne: ['is-logged-in']
+  },
+  TodoController: {
+    findOne: ['is-logged-in']
+  },
   'user/*': ['is-logged-in'],
   'user/create': ['is-logged-out'],
   'user/login': true,
