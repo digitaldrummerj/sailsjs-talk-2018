@@ -23,7 +23,7 @@ module.exports.policies = {
     findOne: ['is-logged-in']
   },
   'user/*': ['is-logged-in'],
-  'user/create': ['is-logged-out'],
+  'user/create': true, // ['is-logged-out'],
   'user/login': true,
   'todo/*': ['is-logged-in'],
 };
